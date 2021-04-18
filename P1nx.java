@@ -7,7 +7,7 @@ public class Pn1x {
         Calcula area = new Calcula(); 
         
         double a = 0, b = 0, c = 0;
-        double circ, rec, tri, test;
+        double test;
          System.out.print("Entrada: ");
          line = scan.nextLine();
         
@@ -45,8 +45,8 @@ public class Pn1x {
                     b = Double.parseDouble(arrayValores[1]);
                     c = Double.parseDouble(arrayValores[2]);
                     test = (a+b+c)/2;                               // Não está funcionando esta condição.
-                    if((test-a<0)&&(test-b<0)&&(test-c<0)){ 
-                        System.out.println("Nao e possivel construir um triangulo com os valores digitados");
+                    if(((test-a)<=0)||((test-b)<=0)||((test-c)<=0)){ 
+                        System.out.println("Nao existe Triangulo com essas medidas!");
                         break;
                     }else{
                         System.out.println("Vamos calcular a area do triangulo!");
