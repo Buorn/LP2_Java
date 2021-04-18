@@ -1,5 +1,5 @@
 import java.util.*;
-public class Pn1 {
+public class Pn1x {
     public static void main(String[] args) {
         String line;
 
